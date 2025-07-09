@@ -33,6 +33,9 @@ function App() {
       <Circle bgcolor="red">
         <Text>KANG</Text>
       </Circle>
+      <Circle bgcolor="red">
+        <Text>KANG</Text>
+      </Circle>
       <Button variant="contained" color="error">
         DOOYOUNG
       </Button>
