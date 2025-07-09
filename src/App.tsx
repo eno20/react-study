@@ -30,8 +30,11 @@ function App() {
       <Circle bgcolor="yellow">
         <Text>Mr.</Text>
       </Circle>
+      <Circle bgcolor="red">
+        <Text>KANG</Text>
+      </Circle>
       <Button variant="contained" color="error">
-        Kang
+        DOOYOUNG
       </Button>
     </Father>
   );
