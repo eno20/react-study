@@ -32,7 +32,7 @@ function App() {
       </Circle>
       <Button variant="contained" color="error">
         Kang
-      </Button>
+      </Butto>
     </Father>
   );
 }

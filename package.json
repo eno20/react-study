@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "workspaces": [
+    "src/*",
+    "apps/*",
+    "packages/**/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -17,6 +22,12 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "styled-components": "^6.1.19"
+  },
+  "lint-staged": {
+    "{apps,packages,src}/!(config)/**/*.{ts,tsx,js,json}": [
+      "eslint --fix",
+      "prettier --write --cache"
+    ]
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
