@@ -12,8 +12,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -25,10 +24,14 @@
     "styled-components": "^6.1.19"
   },
   "lint-staged": {
-    "{apps,packages,src}/!(config)/**/*.{ts,tsx,js,json}": [
+    "*.js": [
       "eslint --fix",
-      "prettier --write --cache"
-    ]
+      "prettier --write"
+    ],
+    "*.ts": [
+      "eslint --fix"
+    ],
+    "*.css": "prettier --write"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
